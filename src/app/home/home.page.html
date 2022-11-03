@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <form [formGroup]="formLogin" (ngSubmit)="login()">
+      <div>
+        <label for="">Usuario</label>
+        <input type="text" formControlName="user">
+      </div>
+      <div>
+        <label for="">Password</label>
+        <input type="password" formControlName="password">
+      </div>
+      <div>
+        <button>Ingresar</button>
+      </div>
+    </form>
+  </div>
+</ion-content>
